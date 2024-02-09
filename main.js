@@ -15,7 +15,7 @@ let noClickCount = 0;
     if (noClickCount < messages.length) {
       noButton.textContent = messages[noClickCount];
     } else {
-      noButton.textContent = "FUCK YOU 🤫";
+      noButton.textContent = "FUCK YOU🤫";
     }
     noClickCount++;
     yesButton.style.fontSize = (16 + noClickCount * 10) + "px"; // Increasing font size more significantly
