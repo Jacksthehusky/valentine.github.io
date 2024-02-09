@@ -1,13 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&hearts;&hearts;&hearts;</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Day</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="container">
+  <img id="gif" src="images/jump-bear.gif" alt="Valentine's Day Gif">
+  <p id="message">Hiiii Nour! Will you be my valentine 🌹?</p>
+
+  <div id="buttons">
+    <button id="yes" class="btn" onclick="displayMessage('Yayyy !!!')">Yes 😍</button>
+    <button id="no" class="btn" onclick="handleNoClick()">No 🥲</button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
 </html>
