@@ -11,7 +11,7 @@ let noClickCount = 0;
   function handleNoClick() {
     const noButton = document.getElementById('no');
     const yesButton = document.getElementById('yes');
-    const messages = ["Are you sure?🥺", "Really Sure?😢", "Think again 😛", "Last chance 😜", "You might regret this 😒","Absolutely Positive? 🤗","No Doubt? 😇","Final Decision? 🤔","Still Thinking? 🤨","Any Second Thoughts? 🧐","Just Say YES 🤐"];
+    const messages = ["Are you sure?🥺", "Really Sure?😢", "Think again 😛", "Last chance 😜", "Absolutely Positive? 🤗","Final Decision? 🤔","Still Thinking? 🤨","Just Say YES 🤐"];
     if (noClickCount < messages.length) {
       noButton.textContent = messages[noClickCount];
     } else {
