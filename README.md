@@ -19,5 +19,5 @@ Welcome to my Valentine's Day Website repository! This project is a fun and inte
 Contributions are welcome! If you have any ideas for new features, improvements, or bug fixes, feel free to submit a pull request. Let's spread even more love together!
 
 ## Author
-[Hadi Mkammal]
+[DigitalizedMask]
 [https://github.com/Jacksthehusky]
