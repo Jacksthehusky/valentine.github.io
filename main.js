@@ -15,7 +15,7 @@ confetti({
 });
   // Redirect to index.html after 1 second
   setTimeout(() => {
-    window.location.href = "Zuzu.html"; // Redirect to the main website
+    window.location.href = "zuzu.html"; // Redirect to the main website
   }, 1000); // 3000 milliseconds = 3 seconds
 }
 
