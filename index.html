@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valentine's Day</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" type="image/x-icon" href="images/icon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico">
 </head>
 <body>
+  <div id="container">
+    <!-- Animated Hearts Background -->
+    <div class="hearts-background">
+      <div class="heart">💖</div>
+      <div class="heart">💖</div>
+      <div class="heart">💖</div>
+      <div class="heart">💖</div>
+      <div class="heart">💖</div>
+    </div>
 
-<div id="container">
-  <img id="gif" src="images/jump-bear.gif" alt="Valentine's Day Gif">
-  <p id="message">Hiiii ****! Will you be my valentine🌹?</p>
+    <!-- Main Content -->
+    <div class="content">
+      <img id="gif" src="images/jump-bear.gif" alt="Valentine's Day Gif">
+      <p id="message">Zuzuuu! Will you be my valentine? 🌹</p>
 
-  <div id="buttons">
-    <button id="yes" class="btn" onclick="displayMessage('Yayyy !!!')">Yes😍</button>
-    <button id="no" class="btn" onclick="handleNoClick()">No🥲</button>
+      <!-- Buttons -->
+      <div id="buttons">
+        <button id="yes" class="btn" onclick="displayMessage('Yayyy !!!')">Yes 😍</button>
+        <button id="no" class="btn" onclick="handleNoClick()">No 🥲</button>
+      </div>
+    </div>
   </div>
-</div>
 
-<script src="main.js"></script>
-
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </body>
 </html>

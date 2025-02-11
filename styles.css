@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .section {
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .highlight {
+    color: #ff6f61;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .heart-emoji {
+    font-size: 3rem;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  .coffee-img, .ice-cream-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  #wish-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #wish-btn:hover {
+    background: #ff3b2f;
+  }
+  
+  #wish-message {
+    display: none;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .footer {
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+
+
+  .live-counter {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  #counter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+  }
+
+  .fav-food {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .banana-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 5px solid #ff6f61; /* Add a fun border */
+  }
+  
+  .funny-text {
+    font-size: 1.2rem;
+    color: #ff6f61;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  .memories {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for desired column width */
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .photo-grid img {
+    width: 100%; /* Make images fill their container */
+    height: 100%; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
