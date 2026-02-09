@@ -29,7 +29,7 @@ function createHeart() {
 setInterval(createHeart, 300);
 
 // Live Counter for First Date
-const firstDate = new Date('2024-10-12'); // Your first date
+const firstDate = new Date('2026-02-01 20:00:00'); // Your first date
 const yearsEl = document.getElementById('years');
 const monthsEl = document.getElementById('months');
 const daysEl = document.getElementById('days');
