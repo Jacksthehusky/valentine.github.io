@@ -7,6 +7,10 @@ function displayMessage(message) {
   messageElement.textContent = message; // Display the message
   document.getElementById('buttons').innerHTML = ''; // Remove the buttons
 
+   // Save music time
+  const music = document.getElementById("bg-music");
+  localStorage.setItem("musicTime", music.currentTime);
+  
 // Trigger confetti
 confetti({
   particleCount: 100,
@@ -36,9 +40,27 @@ function handleNoClick() {
   if (noClickCount < messages.length) {
     noButton.textContent = messages[noClickCount];
   } else {
-    noButton.textContent = "FUCK YOU🤫";
+    noButton.textContent = "Nice try 😏";
   }
 
+   const x = Math.random() * 200 - 100;
+  const y = Math.random() * 200 - 100;
+
+  noButton.style.transform = `translate(${x}px, ${y}px)`;
+
   noClickCount++;
-  yesButton.style.fontSize = (16 + noClickCount * 10) + "px"; // Increase font size
+  yesButton.style.fontSize = (16 + noClickCount * 8) + "px"; // Increase font size
+
+  confetti({
+  particleCount: 30,
+  spread: 120,
+  origin: { x: Math.random(), y: 0.6 }
+});
+
 }
+
+const music = document.getElementById("bg-music");
+
+document.body.addEventListener("click", () => {
+  music.play();
+}, { once: true });

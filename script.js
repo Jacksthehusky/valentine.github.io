@@ -1,3 +1,15 @@
+const music = document.getElementById("bg-music");
+const savedTime = localStorage.getItem("musicTime");
+
+if (savedTime) {
+  music.currentTime = savedTime;
+}
+
+document.body.addEventListener("click", () => {
+  music.play();
+}, { once: true });
+
+
 // 11:11 Wish Button
 const wishBtn = document.getElementById('wish-btn');
 const wishMessage = document.getElementById('wish-message');
@@ -35,23 +47,37 @@ const monthsEl = document.getElementById('months');
 const daysEl = document.getElementById('days');
 
 function updateCounter() {
-  const currentDate = new Date();
-  const diffInTime = currentDate - firstDate; // Difference in milliseconds
+  const now = new Date();
+  let years = now.getFullYear() - firstDate.getFullYear();
+  let months = now.getMonth() - firstDate.getMonth();
+  let days = now.getDate() - firstDate.getDate();
 
-  // Convert time difference to years, months, and days
-  const diffInDays = Math.floor(diffInTime / (1000 * 60 * 60 * 24));
-  const years = Math.floor(diffInDays / 365);
-  const months = Math.floor((diffInDays % 365) / 30);
-  const days = diffInDays % 30;
+  if (days < 0) {
+    months--;
+    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+    days += prevMonth;
+  }
 
-  // Update the counter
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
   yearsEl.textContent = years;
   monthsEl.textContent = months;
   daysEl.textContent = days;
 }
+
 
 // Update the counter every second
 setInterval(updateCounter, 1000);
 
 // Initial call to display the counter immediately
 updateCounter();
+
+
+window.addEventListener("scroll", () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    document.getElementById("secret").style.opacity = 1;
+  }
+});
