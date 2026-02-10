@@ -1,12 +1,22 @@
 body {
     margin: 0;
-    font-family: 'Dancing Script', cursive;
+     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     color: #fff;
     text-align: center;
     overflow-x: hidden;
   }
   
+  h1, h2, .title {
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 2px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
   .container {
     padding: 20px;
   }

@@ -54,8 +54,8 @@ function updateCounter() {
 
   if (days < 0) {
     months--;
-    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
-    days += prevMonth;
+    const prevMonthDays = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+    days += prevMonthDays;
   }
 
   if (months < 0) {
@@ -63,11 +63,20 @@ function updateCounter() {
     months += 12;
   }
 
-  yearsEl.textContent = years;
-  monthsEl.textContent = months;
-  daysEl.textContent = days;
-}
+  let result = "";
 
+  if (years > 0) {
+    result += `${years} year${years > 1 ? "s" : ""}, `;
+  }
+
+  if (months > 0) {
+    result += `${months} month${months > 1 ? "s" : ""}, `;
+  }
+
+  result += `${days} day${days > 1 ? "s" : ""} ❤️`;
+
+  document.getElementById("counter").textContent = result;
+}
 
 // Update the counter every second
 setInterval(updateCounter, 1000);
