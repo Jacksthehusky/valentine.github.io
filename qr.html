@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine QR Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    background: #ffe6eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(255,0,100,0.3);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .qr {
+    margin: 20px 0;
+  }
+
+  .qr img {
+    width: 200px;
+    border-radius: 15px;
+    background: white;
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .footer {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  @media print {
+    body {
+      background: white;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>For You 💖</h1>
+
+  <p class="text">I made you something special…</p>
+
+  <div class="qr">
+    <img src="images/qrcode.jpeg" alt="QR Code">
+  </div>
+
+  <p class="text">Scan me for a surprise 🎁</p>
+
+  <div class="footer">
+    From Hadi, with love 💌
+  </div>
+</div>
+
+</body>
+</html>
