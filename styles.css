@@ -160,3 +160,43 @@ p {
 #secret {
   transition: opacity 2s ease;
 }
+
+.photo-grid.small-caption {
+      margin-top: 1rem;
+    }
+    .photo-grid.small-caption figure {
+      margin: 0;
+      text-align: center;
+    }
+    .photo-grid.small-caption figcaption {
+      font-size: 0.9rem;
+      color: #b76e79;
+      font-weight: 400;
+      margin-top: 0.3rem;
+      font-style: italic;
+    }
+    .word-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .word-card {
+      background: #fff0f2;
+      padding: 1rem 0.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #a64253;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      border: 1px solid #fadadd;
+      transition: 0.2s;
+      text-align: center;
+    }
+    .word-card:hover {
+      background: #ffe1e5;
+      transform: scale(1.02);
+    }
+    .section .highlight {
+      background: linear-gradient(145deg, #ffe7eb, #ffd5dc);
+    }
